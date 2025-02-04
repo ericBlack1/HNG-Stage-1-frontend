@@ -1,5 +1,5 @@
 const colorBox = document.querySelector('[data-testid="colorBox"]');
-const colorOptions = document.querySelector('.color-options');
+const colorOptions = document.querySelector('[data-testid="colorOption"]');
 const gameStatus = document.querySelector('[data-testid="gameStatus"]');
 const scoreElement = document.querySelector('[data-testid="score"]');
 const newGameButton = document.querySelector('[data-testid="newGameButton"]');

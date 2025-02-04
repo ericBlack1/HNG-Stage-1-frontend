@@ -7,6 +7,15 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+}
   
 .game-container {
     text-align: center;
@@ -42,9 +51,11 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounce 1s infinite;
 }
   
 .color-options button:hover {
+    animation: none;
     transform: scale(1.1);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -86,6 +97,7 @@ body {
     .color-options button {
         width: 80px;
         height: 80px;
+        float: inline-start;
     }
   
     .color-box {
@@ -100,5 +112,6 @@ body {
 
     .game-container {
         height: 100vh;
+        background: linear-gradient(135deg, #7a7373, #b88a82);
     }
 }
